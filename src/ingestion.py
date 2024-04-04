@@ -1,8 +1,9 @@
 from typing import Iterator, Union
-from r2r.core import BasicDocument, BasicIngestionPipeline
-from r2r.core.adapters import ReductoAdapter
-from r2r.pipelines import IngestionType
- 
+
+from r2r.core import BasicDocument
+from r2r.pipelines import BasicIngestionPipeline, IngestionType
+
+
 class AutoContextIngestionPipeline(BasicIngestionPipeline):
     def process_data(
         self,
