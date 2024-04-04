@@ -9,5 +9,4 @@ class AutoContextIngestionPipeline(BasicIngestionPipeline):
         entry_type: IngestionType,
         entry_data: Union[bytes, str],
     ) -> Iterator[BasicDocument]:
-        
-    
+        pass

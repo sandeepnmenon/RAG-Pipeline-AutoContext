@@ -40,7 +40,13 @@ class AutoContextRAGPipelineOutput(RAGPipelineOutput):
         # add url, visit date, title, snippet
         filtered_results = []
         for result in search_results:
-            formatted_result = f"URL: {result.url}\nVisit Date: {result.visit_date}\nTitle: {result.title}\Context: {result.snippet}"
+            print(result)
+            metadata = result.metadata
+            url = metadata['url']
+            title = metadata['title']
+            text = metadata['text']
+            formatted_result = f"URL: {url}\nnTitle: {title}\Context: {text}"
+            print(formatted_result)
             filtered_results.append(formatted_result)
         return "\n\n".join(filtered_results)
 

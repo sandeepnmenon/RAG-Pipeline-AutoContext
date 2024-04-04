@@ -27,7 +27,8 @@
     },
     "vector_database": {
       "provider": "local",
-      "collection_name": "demo_vecs"
+      "collection_name": "demo_vecs",
+      "local_db_path": "local.sqlite"
     },
     "app": {
       "max_logs": 100
